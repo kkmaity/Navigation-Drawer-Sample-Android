@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bit.com.navigationdrawer.MainActivity"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <include
+            android:id="@+id/toolbarMainPage"
+            layout="@layout/toolbar_main_page"></include>
+
+        <LinearLayout
+            android:id="@+id/containerFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:text="Hello World"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rightDrawer"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtvwCamera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Camera"
+                    android:padding="10dp"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/camera2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gallery"
+                    android:padding="10dp"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/camera3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:padding="10dp"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/camera4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Camera"
+                    android:padding="10dp"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/camera5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ball"
+                    android:padding="10dp"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
